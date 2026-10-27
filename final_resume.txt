@@ -1,0 +1,241 @@
+          %-------------------------
+% Resume in Latex
+% Author: Nikhil Kumar
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{ragged2e}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{times} % Sets Times New Roman as the default font
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Times New Roman is set via \usepackage{times}, no additional font packages needed
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedbottom
+\tolerance=1000
+\emergencystretch=3em
+\hbadness=10000
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% \titlespacing{\section}{0pt}{4pt}{2pt}
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    % {#1\par}
+    {#1\par\vspace{-2 pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=3pt, partopsep=0pt, parsep=0pt, itemsep=1pt]}
+
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt]{article}
+
+\newcommand{\name}{Nikhil Kumar} % Your Name
+\newcommand{\phone}{-8527799875} % Your Phone Number
+\newcommand{\email}{nikhilaggarwal298@gmail.com} % Your Email
+\newcommand{\linkedin}{linkedin.com/in/nikhilkumar298} % Your LinkedIn URL
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\begin{center}
+    {\LARGE \textbf{\name}} \\ % Large name in bold
+    \vspace{5 pt} % Space between name and contact info
+    \href{https://\linkedin}{linkedin.com/in/nikhilkumar298} \quad $\vert$ \quad
+    \href{mailto:\email}{\email} \quad $\vert$ \quad
+    +91\phone
+\end{center}
+
+
+
+    
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item[] \small{
+DevOps/SRE Engineer with \textbf{3+ years} of experience at TCS building \textbf{Python-based automation}, \textbf{Grafana} observability dashboards, and \textbf{alerting and ticketing automation}  for enterprise application teams. Hands-on with \textbf{CI/CD}, \textbf{Docker}, \textbf{Kubernetes} and vulnerability scanning, with working knowledge of \textbf{RAG}, \textbf{MCP} and \textbf{LLM applications} (AWS Bedrock, Azure AI; \textbf{AWS Developer} and \textbf{Azure AI Engineer} certified). M.Tech from \textbf{IIT Guwahati} with a deep learning background. Strong in translating application team requirements into reliable monitoring and automation solutions.
+  \par}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Sep 2023 - Present}
+      {System Engineer – DevOps / SRE (Innovator)}{}
+      \resumeItemListStart
+
+    
+    \resumeItem{Developed \textbf{reconciliation monitoring} for \textbf{Control-M} jobs syncing transactional records: polled the \textbf{Control-M API} every 5 minutes for completed jobs, validated results via \textbf{Redshift} SQL on structured job logs, and alerted on reconciliation failures.}
+    \resumeItem{Built \textbf{Grafana} observability dashboards for application teams on \textbf{Redshift}, \textbf{Snowflake}, \textbf{Oracle}, \textbf{Prometheus} metrics and logs; centralized monitoring of \textbf{100+ daily Control-M job executions}, replacing manual status checks.}
+    \resumeItem{Implemented \textbf{threshold-based proactive alerting} (CPU, license usage, job delays) using Grafana webhooks to a custom \textbf{Python} service that enriches payloads and routes to email, \textbf{ServiceNow/IRIS} incidents or service requests with severity-based P2/P3 mapping.}
+    \resumeItem{Automated \textbf{Snowflake} and \textbf{Oracle} error monitoring with \textbf{Python} (key-pair auth, 15-minute \textbf{cron} checks, scheduled morning/evening reports), tracking long-running jobs against thresholds and using \textbf{Redis} to deduplicate and suppress repeat tickets.}
+        \resumeItem{Remediated critical/high CVEs flagged by \textbf{Snyk} scans through base image upgrades, Dockerfile hardening and package updates; cut image size by \textbf{35\%} with multi-stage \textbf{Docker} builds (verified in \textbf{JFrog Artifactory}).}
+    \resumeItem{Built \textbf{Python}-based synthetic UI monitoring with \textbf{Selenium}/\textbf{Playwright} that logs into a client web portal via service account, validates key functionality and triggers alerts on failures; troubleshot \textbf{Jenkins}/\textbf{Kubernetes} issues using pipeline logs, pod logs and events.}
+
+   
+\resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubheading
+  {Indian Institute of Technology, Guwahati}{Jan 2022 - June 2023}
+  {Teaching Assistant (ME 301M - Robotic Vision and Control)}{}
+  \resumeItemListStart
+
+\resumeItem{Assisted the professor in lab sessions for 30+ students on \textbf{robotic vision and control system}, providing hands-on support in Python coding.}
+\resumeItem{Reviewed and validated student tutorials, assignments, and code implementations, ensuring adherence to course standards and improving code quality.}
+
+
+\resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+\textbf{Languages \& Frameworks}{: \textbf{Python}, C++, \textbf{FastAPI}, Flask} \\
+\textbf{GenAI}{: \textbf{LLM Applications}, \textbf{RAG}, Agentic RAG, Hybrid Retrieval, \textbf{MCP}, AWS Bedrock, Amazon Q, Azure AI Studio} \\
+\textbf{Observability \& SRE}{: \textbf{Grafana}, Prometheus, CloudWatch, \textbf{Threshold-based Proactive Alerting}, Incident \& Service Request Automation, REST API \& Webhook Integrations, \textbf{ServiceNow}, IRIS} \\
+\textbf{DevOps \& Cloud}{: CI/CD Pipelines, \textbf{Docker}, \textbf{Kubernetes}, Jenkins, JFrog, Terraform, Snyk, Git, Bitbucket, \textbf{AWS}, Azure} \\
+\textbf{Databases}{: MySQL, PostgreSQL, Redis, Oracle, \textbf{Snowflake}, Redshift, \textbf{Vector Databases}, Graph Databases} \\
+\textbf{Tools \& Fundamentals}{: Linux, Control-M, JIRA, Confluence, Postman, \textbf{Data Structures \& Algorithms}, OOP, System Design}
+}}
+ \end{itemize}
+%
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt, partopsep=0pt]
+    \item[] \small{\textbf{AWS Certified}: Developer -- Associate (DVA-C02)}
+    \item[] \small{\textbf{Microsoft Certified}: Azure AI Engineer Associate (AI-102)}
+    \item[] \small{\textbf{GitHub Certified}: GitHub Foundations}
+ \end{itemize}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Coupled AI and Biomechanics for Glaucoma Detection from OCT Images}{\hspace{-2.8cm}  Aug 2022 - Jun 2023}
+      {MTP $\vert$ (Dr. Satish Kumar Panda, Assistant Professor, IIT Guwahati)}{}
+      \resumeItemListStart
+       \resumeItem{Manually annotated OCT images in \textbf{Avizo} to create \textbf{4-class masks} (cornea, iris, anterior chamber, background). Trained a custom \textbf{U-Net} (\textbf{TensorFlow, Keras}) on \textbf{Google Colab} for 4-class segmentation, achieving \textbf{Dice coefficient 0.93}.}
+\resumeItem{Built a \textbf{binary classifier} on extracted morphological features (anterior chamber width, iris length, area): \textbf{94.7\% accuracy}, 100\% sensitivity, 80\% specificity.}
+      \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Guwahati (IIT Guwahati)}{Aug 2021 - Jun 2023}
+      {M.Tech in Mechanical Engineering}{}
+    \resumeSubheading
+      {Guru Gobind Singh Indraprastha University, Delhi (GGSIPU)}{Aug 2017 - Jul 2021}
+      {B.Tech in Mechanical and Automation Engineering}{}
+  \resumeSubHeadingListEnd
+
+  
+ %-----------PROGRAMMING SKILLS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Gate 2021}{: Secured \textbf{98.92 percentile} among \textbf{120,594} candidates} 
+    }}
+ \end{itemize}
+
+ 
+
+
+
+%-------------------------------------------
+\end{document}
