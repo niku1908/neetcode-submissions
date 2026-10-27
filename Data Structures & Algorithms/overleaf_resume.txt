@@ -1,0 +1,247 @@
+          %-------------------------
+% Resume in Latex
+% Author: Nikhil Kumar
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{times} % Sets Times New Roman as the default font
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Times New Roman is set via \usepackage{times}, no additional font packages needed
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt]{article}
+
+\newcommand{\name}{Nikhil Kumar} % Your Name
+\newcommand{\phone}{-8527799875} % Your Phone Number
+\newcommand{\email}{nikhilaggarwal298@gmail.com} % Your Email
+\newcommand{\linkedin}{linkedin.com/in/nikhilkumar298} % Your LinkedIn URL
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\begin{center}
+    {\LARGE \textbf{\name}} \\ % Large name in bold
+    \vspace{10 pt} % Space between name and contact info
+    \href{https://\linkedin}{linkedin.com/in/nikhilkumar298} \quad $\vert$ \quad
+    \href{mailto:\email}{\email} \quad $\vert$ \quad
+    +91\phone
+\end{center}
+
+
+
+    
+    
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tata Consultancy Services}{Sep 2023 - Present}
+      {System Engineer – DevOps / Observability (Innovator)}{}
+      \resumeItemListStart
+
+    \resumeItem{Designed and implemented observability pipelines by integrating \textbf{Control-M} APIs and \textbf{AWS Redshift}, enabling centralized monitoring of 100+ daily job executions in \textbf{Grafana} dashboards.}
+    \resumeItem{Developed interactive \textbf{Grafana} dashboards to visualize job status, execution trends, and failure patterns, improving stakeholder visibility and reducing manual monitoring effort by 40\%.}
+    \resumeItem{Translated application team requirements into \textbf{SLO}-based alerting rules, implementing custom \textbf{Python}-controlled webhook integrations with \textbf{Grafana} to trigger real-time notifications on threshold breaches.}
+    \resumeItem{Automated alert generation for failed and delayed \textbf{Control-M} jobs using \textbf{Python} scripts and \textbf{REST APIs}, reducing incident response time by 30\%.}
+    \resumeItem{Automated \textbf{ServiceNow}/\textbf{IRIS} incident ticket creation and prioritization (P2/P3) for application teams, streamlining escalation workflows.}
+    \resumeItem{Performed vulnerability scanning using \textbf{Snyk}, remediating issues via Docker package updates or coordinating exceptions with IRSM team.}
+    \resumeItem{Optimized containerized applications by implementing multi-stage \textbf{Docker} builds, reducing image size by 35\% and improving deployment efficiency.}
+    \resumeItem{Contributed to \textbf{CI/CD} pipelines using \textbf{Docker} and \textbf{Kubernetes} for containerized deployments, improving release consistency and reducing deployment failures by 25\%.}
+    \resumeItem{Collaborated with cross-functional teams to design scalable DevOps solutions and resolve production issues, ensuring 99.9\% system uptime.}
+    \resumeItem{Managed source code and workflows using \textbf{Git}, \textbf{Bitbucket}, \textbf{JIRA}, and \textbf{Confluence}, improving team productivity and traceability.}
+  
+    
+    \
+   
+\resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubheading
+  {Indian Institute of Technology, Guwahati}{Jan 2022 - June 2023}
+  {Teaching Assistant (ME 301M - Robotic Vision and Control)}{}
+  \resumeItemListStart
+
+\resumeItem{Conducted hands-on lab sessions and supported 30+ students in \textbf{robotic vision and control system} coding using Python.}
+\resumeItem{Reviewed and validated student tutorials, assignments, and code implementations, ensuring adherence to course standards and improving code quality.}
+
+
+\resumeItemListEnd
+    
+
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     
+\textbf{Languages}{: \textbf{Python}, C++} \\
+\textbf{Frameworks}{: \textbf{FastAPI}, \textbf{Flask}, REST APIs, CI/CD Pipelines, \textbf{Docker}, \textbf{Kubernetes}} \\
+\textbf{Database/Cache}{: MySQL, PostgreSQL, \textbf{Redis}, Vector Databases, Graph Databases} \\
+\textbf{DevOps/SRE}{: Observability, Monitoring \& SLO-based Alerting (\textbf{Grafana}, \textbf{Prometheus}), Webhook Integrations, ITSM (\textbf{ServiceNow}, IRIS), Vulnerability Scanning (\textbf{Snyk}), Terraform } \\
+\textbf{Miscellaneous}{: Linux, Data Structures and Algorithms, OOP, System Design, RAG, Agentic RAG, Hybrid Retrieval, LLM Applications} \\
+\textbf{Developer Tools}{: \textbf{Git}, Bitbucket, JIRA, Confluence, VS Code, Postman, \textbf{AWS Bedrock}, Amazon Q, CloudWatch, Cloud Insights, Azure AI Studio}
+}}
+ \end{itemize}
+ 
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{AWS Certified}: Developer – Associate (DVA-C02) \\
+     \textbf{Microsoft Certified}: Azure AI Engineer Associate (AI-104)\\
+     
+     \textbf{GitHub Certified}: GitHub Foundations 
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Coupled AI and Biomechanics for Ocular Disease Detection}{\hspace{-2.8cm}  Aug 2022 - Jun 2023}
+      {MTP $\vert$ (Dr. Satish Kumar Panda, Assistant Professor, IIT Guwahati)}{}
+      \resumeItemListStart
+       \resumeItem{Developed a disease classification model using \textbf{UNET architecture} for image segmentation, leveraging \textbf{TensorFlow and Keras}.}
+        \resumeItem{Achieved 92\% model accuracy by optimizing data pipelines with \textbf{Python, Google Colab, and Avizo}, contributing to scalable healthcare solutions.}
+      \resumeItemListEnd
+     
+        
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Guwahati (IIT Guwahati)}{Aug 2021 - Jun 2023}
+      {M.Tech in Mechanical Engineering}{}
+    \resumeSubheading
+      {Guru Gobind Singh Indraprastha University, Delhi (GGSIPU)}{Aug 2017 - Jul 2021}
+      {B.Tech in Mechanical and Automation Engineering}{}
+  \resumeSubHeadingListEnd
+
+  
+ %-----------PROGRAMMING SKILLS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Gate 2021}{: Secured \textbf{98.92 percentile} among \textbf{120,594} candidates} \\
+    
+     
+    }}
+ \end{itemize}
+
+ 
+
+
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
